@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    text-decoration: none;
+}
+/* NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN NAV  */
+nav{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+}
+nav ul li{
+    padding: 20px;
+    font-family: 'Asap', sans-serif;
+    text-transform: uppercase;
+    padding: 10px;
+    display: inline; /* desativar o displau padrão block */
+
+}
+.nav-list li a{
+    color: #fff;
+    list-style: none;
+}
+nav div ul li .lis-btn{
+    width: 30px;
+    background-color: green;
+}
+/* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHEADER */
+header{
+    min-height: 100vh;
+    background: url(../img/bg-banner.png);
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header > div{
+    max-width:960px;
+    margin: 0 auto;
+    display: block;
+    padding-top: 100px;
+    text-align: center;
+}
+
+header a{
+    background-color: #fff;
+    color: #000;
+    padding:  10px 30px;
+    text-decoration: none;
+    transition: 1s color;
+}
+header p{
+    font-family: 'Asap', sans-serif;
+    color: #fff;
+    margin: 30px;
+}
+header a:hover{
+    background-color: #000;
+    color: #fff;
+    transition: 1s color;
+}
+h1{
+    font-family: 'Flamenco', cursive;
+    text-transform: uppercase;
+    color: #fff;
+
+}
+sobre{
+    background: #ccc;
+}
