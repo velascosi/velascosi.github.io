@@ -1,73 +1,268 @@
-*{
-    margin: 0;
-    text-decoration: none;
+/* Home */
+* {
+    font-family: 'Asap', sans-serif;
 }
-/* NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN NAV  */
-nav{
+h1 {
+    text-transform: uppercase;
+    font-family: 'Flamenco', cursive;
+    margin: 0 auto;
+}
+h2 {
+    font-family: 'Flamenco', cursive;
     width: 100%;
-    position: fixed;
+    position: inherit;
+    font-size: 28px;
+}
+body {
+    margin: 0;
+}
+
+/* Navegacao */
+ nav {
     display: flex;
+    width: 100%;
     justify-content: space-around;
-    padding: 20px;
+    position: fixed;
+    font-size: 16px;
+    margin-top: 15px;
+    background: mediumturquoise;
+    /* opacity: 0.7; */
+    
+}
+
+nav div {
+    display: flex;
     align-items: center;
 }
-nav ul li{
-    padding: 20px;
-    font-family: 'Asap', sans-serif;
-    text-transform: uppercase;
-    padding: 10px;
-    display: inline; /* desativar o displau padrão block */
 
-}
-.nav-list li a{
-    color: #fff;
+nav li {
+    display: inline;
     list-style: none;
+    padding: 10px;
 }
-nav div ul li .lis-btn{
-    width: 30px;
-    background-color: green;
+nav a {
+    text-decoration: none;
+    color: #f3f3f3;
+    text-transform: uppercase;
 }
-/* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHEADER */
-header{
+
+.quero-agora {
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px 10px;
+    color: yellow;
+}
+
+/* Header */
+header {
     min-height: 100vh;
     background: url(../img/bg-banner.png);
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center bottom;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-header > div{
-    max-width:960px;
-    margin: 0 auto;
-    display: block;
+
+header div {
+    max-width: 960px;
     padding-top: 100px;
+    color: white;
+}
+
+header a {
+    background-color: #f3f3f3;
+    color: black;
+    padding: 10px 30px;
+    text-decoration: none;
+    transition: 5s all;
+    text-transform: uppercase;
+}
+
+header a:hover {
+    background-color: black;
+    color: white;
+    transition: 1s color;
+}
+
+/* Main */
+/* Seção Sobre */
+.sobre > div {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre div div {
+    max-width: 35%;
+    margin-left: 70px;
+}
+
+/* Seção Passo-a-passo */
+.passo-a-passo {
+    min-height: 50vh;
+    width: 100%;
     text-align: center;
 }
 
-header a{
-    background-color: #fff;
-    color: #000;
-    padding:  10px 30px;
+.passo-a-passo div {
+    width: 100%;
+    display: flex;
+}
+
+.passo-a-passo div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.passo-a-passo img {
+    display: block;
+}
+
+.passo-a-passo p {
+    text-align: center;
+    display: block;
+}
+.passo-a-passo span {
+    font-weight: bold;
+    display: block;
+}
+
+/* Nossos Serviços */
+.servicos {
+    min-height: 100vh;
+    background: url(../img/bg-servicos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.servicos div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.servicos div div {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: mediumturquoise;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.servicos a {
     text-decoration: none;
-    transition: 1s color;
-}
-header p{
-    font-family: 'Asap', sans-serif;
-    color: #fff;
-    margin: 30px;
-}
-header a:hover{
-    background-color: #000;
-    color: #fff;
-    transition: 1s color;
-}
-h1{
-    font-family: 'Flamenco', cursive;
     text-transform: uppercase;
-    color: #fff;
+    display: flex;
+    background-color: #FEDD6A;
+    border-radius: 5px;
+    padding: 10px 30px;
+    color: rgb(116, 88, 19);
+}
+
+/* Seção Curiosidades */
+.curiosidades {
+    text-align: center;
+    background: url(../img/bg-numeros.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.curiosidades div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.curiosidades p {
+    width: 25%;
+}
+.curiosidades span {
+    font-size: 50px;
+    display: block;
+    color: yellow;
+    font-weight: bolder;
+}
+
+.contato {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato h2 {
+    text-align: center;
+}
+
+.contato div {
+    display: flex;
+    flex-direction: column;
+    min-width: 50vh;
+}
+
+div.dados {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contato > div > div {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+div input, textarea {
+    background-color:rgba(255, 255, 0, 0.5);
+    width: 100;
+}
+
+div.dados input {
 
 }
-sobre{
-    background: #ccc;
+/* Footer */
+footer nav {
+    width: 100%;
+}
+footer > div {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #595959;
+    color: #f3f3f3;
+}
+
+footer > div {
+    padding-top: 10px;
+}
+/* mapa do site - footer */
+footer ul li {
+    font-family: 'Asap', Arial, Helvetica, sans-serif;
+    list-style: none;
+    text-align: left;
+    padding: 2px;
+}
+
+footer ul a {
+    font-family: 'Asap', Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #f3f3f3;
 }
